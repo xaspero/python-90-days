@@ -3,19 +3,19 @@
 **Goal:** Learn the 20% of Python that unlocks 80% of real-world data science & sports analytics output.
 **Owner:** Wisdom (Matthew Wisdom Letam)
 **Start date:** Tuesday, 12 May 2026
-**Target end date:** Monday, 10 August 2026 (Day 90)
+**Target end date:** Tuesday, 11 August 2026 (Day 90)
 **End state:** Rebuild the Betting Engine's statistical core in Python with proper libraries, plus ~10 mini-projects and one portfolio-grade capstone.
 
 ---
 
 ## Ground Rules
 
-- [ ] I write all the code. Claude only explains, reviews, and debugs.
-- [ ] Daily GitHub commit (even a small one). The streak is the receipt.
-- [ ] Daily dev journal entry (use the accountability template).
-- [ ] One mini-project shipped per week.
-- [ ] No skipping fundamentals to chase shiny libraries.
-- [ ] Weekly retro every Sunday (or whichever day closes my week).
+- [*] I write all the code. Claude only explains, reviews, and debugs.
+- [*] Daily GitHub commit (even a small one). The streak is the receipt.
+- [*] Daily dev journal entry (use the accountability template).
+- [*] One mini-project shipped per week.
+- [*] No skipping fundamentals to chase shiny libraries.
+- [*] Weekly retro every Sunday (or whichever day closes my week).
 
 ---
 
@@ -27,8 +27,8 @@
 
 ### Week 1 — Foundations & Pythonic Idioms
 
-- [ ] Environment setup (Python, VS Code, venv, Git)
-- [ ] Syntax, types, operators, control flow
+- [*] Environment setup (Python, VS Code, venv, Git)
+- [] Syntax, types, operators, control flow
 - [ ] Lists, tuples, dicts, sets — and _when each is the right choice_
 - [ ] First `pytest` test passing
 - [ ] **Mini-project 1:** CLI tip/odds calculator (with tests)
