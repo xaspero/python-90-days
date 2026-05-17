@@ -19,6 +19,28 @@ Keep this file in the same repo as the tracker. Commit it daily — the journal 
 
 _Newest entries first_
 
+## Daily Entry — Day 4 / 90
+
+**Date:** Saturday/Sunday, 16th - 17th 2026
+**Hours worked:** 4 hours
+**Tracker checkboxes ticked today:** \*\***\_\_**\*\*\*\*
+
+### 1. What I built / learned today
+
+_(I recreated the 'hello.py' file and have it accept variable number of arguments and an optional argument)_
+
+### 2. What confused me
+
+_(How to setup 'Make" on my local machine)_
+
+### 3. Today's commit(s)
+
+_(Added a more robust interativity to hello.py)_
+
+### 4. Tomorrow's first task
+
+_(I will commence chapter 2 and learn hot to use the 'Make' file.)_
+
 ## Daily Entry — Day 3 / 90
 
 **Date:** Friday, 16th 2026

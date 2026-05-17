@@ -1,36 +1,62 @@
 #!/usr/bin/env python3
+# Purpose: Say hello
+
 """
-GREETING PROGRAM - Command-line Hello Tool with Required Name
-
-This program greets the user by their name using a required command-line argument.
-
-WHAT IT DOES:
-  - Takes a required name argument from the command line
-  - Prints a personalized greeting: "Hello, [name]!"
-  - Displays error if name is not provided
-
-HOW TO USE IT:
-  ./hello.py Alice      # Output: Hello, Alice!
-  ./hello.py Bob        # Output: Hello, Bob!
-
-TECHNICAL DETAILS:
-  - Uses argparse module to handle command-line arguments
-  - Argument "name" is a positional argument (required)
-  - Provides helpful --help output for users
-  - Uses Python f-strings for string formatting
+Author: Wisdom Matthew <w.matthew@outlook.com>
+Purpose: Say hello
 """
 
 import argparse
 
-# Create a parser to handle command-line arguments
-parser = argparse.ArgumentParser(description="Say hello")
+# parser = argparse.ArgumentParser(description='Say hello')
+# parser.add_argument('name', help='Name to greet')
+# args = parser.parse_args()
+# print('Hello, ' + args.name + '!')
 
-# Define a required positional argument for the user's name
-parser.add_argument("name", help="Your name")
+# MAKING THE ARGUMENT OPTIONAL
 
-# Parse the command-line arguments
-args = parser.parse_args()
+# parser = argparse.ArgumentParser(description='Say hello')
+# parser.add_argument('-n', '--name', metavar='name', default='World', help='Name to greet')
+# args = parser.parse_args()
+# print('Hello, ' + args.name + '!')
 
-# Print the greeting
-print(f"Hello, {args.name}!")
+# ADDING THE main() FUNCTION
 
+# def main():
+#     parser = argparse.ArgumentParser(description='Say hello')
+#     parser.add_argument('-n', '--name', metavar='name', default='World', help='Name to greet')
+#     args = parser.parse_args()
+#     print('Hello, ' + args.name + '!')
+
+# if __name__ == '__main__':
+#     main()
+
+# ADDING THE get_args() FUNCTION
+
+# After I have used pylint (pylint hello.py) to fix the code
+
+
+# ----------------------------------------------------------------------------------------------
+def get_args():
+    """ Get the command-line argument """
+    parser = argparse.ArgumentParser(description="Say hello")
+    parser.add_argument("-n",
+                        "--name",
+                        metavar="name",
+                        default="World",
+                        help="Name to greet")
+    return parser.parse_args()
+
+
+# ----------------------------------------------------------------------------------------------
+
+
+def main():
+    """ It all starts here! """
+    args = get_args()
+    print("Hello, " + args.name + "!")
+
+
+# ----------------------------------------------------------------------------------------------
+if __name__ == "__main__":
+    main()
